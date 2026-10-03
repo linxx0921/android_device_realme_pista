@@ -11,9 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/pista/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_pista
+PRODUCT_NAME := voltage_pista
 PRODUCT_DEVICE := pista
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
