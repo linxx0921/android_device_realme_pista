@@ -12,7 +12,8 @@
             <density>530</density>
         </density>
     </densityMapping>
-    <screenBrightnessMap>
+
+    <screenBrightnessMap interpolation="linear">
         <point>
             <value>0.000000000</value>
             <nits>1.835000</nits>
@@ -274,7 +275,9 @@
             <nits>775.475000</nits>
         </point>
     </screenBrightnessMap>
+
     <screenBrightnessDefault>0.445126862</screenBrightnessDefault>
+
     <highBrightnessMode enabled="true">
         <transitionPoint>0.85</transitionPoint>
         <minimumHdrPercentOfScreen>0.1</minimumHdrPercentOfScreen>
@@ -284,7 +287,25 @@
             <timeMaxSecs>300</timeMaxSecs>
             <timeMinSecs>60</timeMinSecs>
         </timing>
+        <sdrHdrRatioMap>
+            <point>
+                <sdrNits>2.000</sdrNits>
+                <hdrRatio>8.000</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>500.000</sdrNits>
+                <hdrRatio>1.5</hdrRatio>
+            </point>
+        </sdrHdrRatioMap>
     </highBrightnessMode>
+
+    <screenBrightnessRampFastDecrease>0.06</screenBrightnessRampFastDecrease>
+    <screenBrightnessRampFastIncrease>0.06</screenBrightnessRampFastIncrease>
+    <screenBrightnessRampSlowDecrease>0.04</screenBrightnessRampSlowDecrease>
+    <screenBrightnessRampSlowIncrease>0.04</screenBrightnessRampSlowIncrease>
+    <screenBrightnessRampIncreaseMaxMillis>3000</screenBrightnessRampIncreaseMaxMillis>
+    <screenBrightnessRampDecreaseMaxMillis>3000</screenBrightnessRampDecreaseMaxMillis>
+
     <autoBrightness enabled="true">
         <brighteningLightDebounceMillis>1500</brighteningLightDebounceMillis>
         <darkeningLightDebounceMillis>1500</darkeningLightDebounceMillis>
@@ -497,6 +518,7 @@
             </map>
         </luxToBrightnessMapping>
     </autoBrightness>
+
     <displayBrightnessChangeThresholds>
         <brighteningThresholds>
             <brightnessThresholdPoints>
@@ -515,6 +537,7 @@
             </brightnessThresholdPoints>
         </darkeningThresholds>
     </displayBrightnessChangeThresholds>
+
     <ambientBrightnessChangeThresholds>
         <brighteningThresholds>
             <brightnessThresholdPoints>
@@ -541,6 +564,7 @@
             </brightnessThresholdPoints>
         </darkeningThresholds>
     </ambientBrightnessChangeThresholds>
+
     <displayBrightnessChangeThresholdsIdle>
         <brighteningThresholds>
             <brightnessThresholdPoints>
@@ -559,6 +583,7 @@
             </brightnessThresholdPoints>
         </darkeningThresholds>
     </displayBrightnessChangeThresholdsIdle>
+
     <ambientBrightnessChangeThresholdsIdle>
         <brighteningThresholds>
             <brightnessThresholdPoints>
