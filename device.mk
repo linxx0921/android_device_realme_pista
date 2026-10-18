@@ -9,6 +9,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Audio
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/audio_effects_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sun/audio_effects_config.xml \
+    $(LOCAL_PATH)/configs/audio/audio_module_config_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_module_config_primary.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/configs/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
@@ -38,9 +40,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-mtp-SN220.conf_24600:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf_24600:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
-
-# Power
-$(call soong_config_set,qtipower,mode_ext_lib,power-ext-oplus)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
